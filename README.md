@@ -29,5 +29,10 @@ Created a thrid container and wrote a simple test case to open, maximize, check 
 ### Ansible
 
 A playbook is written that installs docker and clones this repo and runs docker compose
+Ansible version must be >= 2.10
+hosts-> weatherapp (can also be a separate inventory with list of needed machines)
 
+Playbook can be run with
+ansible-playbook -u userthatconnectstohosts -k weatherapp.yml
+This will run playbook weatherapp.yml to the hosts under weatherapp and uses user userthatconnectstohosts to connect to the hosts.
 #
